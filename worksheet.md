@@ -183,6 +183,15 @@ data.frame(x = 1:10)
     ## 9   9
     ## 10 10
 
+You can also assign methods for a specific class the following way:
+
+``` r
+print.custom_num = function(x){print(x$x)}
+print.custom_num(nums)
+```
+
+    ##  [1]  1  2  3  4  5  6  7  8  9 10
+
 Let's see if we can create a new data\_scientist object, with class `Person` with at least 2 attributes.
 
 ``` r

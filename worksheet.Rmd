@@ -121,6 +121,12 @@ as.data.frame(nums)
 data.frame(x = 1:10)
 ```
 
+You can also assign methods for a specific class the following way:
+```{r}
+print.custom_num = function(x){print(x$x)}
+print.custom_num(nums)
+```
+
 Let's see if we can create a new data_scientist object, with class `Person` with at least 2 attributes. 
 ```{r}
 ## Your Code Here
